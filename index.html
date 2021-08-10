@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap" rel="stylesheet">  
+</head>
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <h1>query of csv-Data</h1>
+    </header>
+    <main>
+      <section class="input">
+        <form id="myForm">
+          <input type="file" id="csvFile" accept=".csv" />
+          <input type="submit" value="Submit" />
+        </form>
+        <label>geladene Elemente</label>
+        <label id="loaded"></label>
+      </section>
+      <section class="change-data">
+        <h2 class="change-header"> change datas</h2>
+        <div class="changeInput">
+          
+          <label class="change-input-label">change clicked parameter:</label>
+          <input type="text", id="change-input-text", class="change-input-text"></input>
+
+          <label class="change-input-label">current value:</label>
+          <label class="currentvalue" id="current-value">first</label>
+          <p></p>
+          <div>
+            <button id="save-button" class="changeInput-button" disabled>save</button> 
+            <button id="cancel-button" class="changeInput-button" disabled>cancel</button>
+          </div>
+        </div>
+        <button class="new-line" id="new-line">new line</button>
+      </section>
+      <section class="output-data" id="output">
+          <h2>output of data:</h2>
+        <div class="head-table" id="head-table">
+          <div class="radio"></div>
+          <div class="informations" id="main-information">
+            <div class="tableHeading">#</div>
+            <div class="tableHeading">name</div>
+            <div class="tableHeading">producer</div>
+            <div class="tableHeading">description</div>
+            <div class="tableHeading">material</div>
+            <div class="tableHeading">gender</div>
+            <div class="tableHeading">type</div>
+            <div class="tableHeading">sleeve</div>
+            <div class="tableHeading">leg</div>
+            <div class="tableHeading">collar</div>
+            <div class="tableHeading">production</div>
+            <div class="tableHeading">pocket</div>
+            <div class="tableHeading">grammar</div>
+            <div class="tableHeading">material2</div>
+            <div class="tableHeading">origin</div>
+            <div class="tableHeading">picture</div>
+          </div>
+        </div>
+        <div class="table" id="table"></div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js">  </script>
+</html>
