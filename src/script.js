@@ -1,5 +1,5 @@
-// const inputString =
-"Hauptartikelnr;Artikelname;Hersteller;Beschreibung;Materialangaben;Geschlecht;Produktart;Ärmel;Bein;Kragen;Herstellung;Taschenart;Grammatur;Material;Ursprungsland;Bildname102.85;'Paul - Men's Supersoft Organic T-Shirt';Nakedshirt;'Single Jersey, Rundhalsausschnitt mit Rippstrickbündchen, Nackenband, Seitennähte, Doppelnaht an Ärmelabschluss und Bund, Medium Fit, Neutrales Größenetikett im Nacken ';'100% Bio-Baumwolle ';Herren;T-Shirts;Kurzarm;;Rundhals;'Fair & Umweltfreundlich';;'200 g/m²';Bio-Baumwolle;;102.85.jpg105.85;'Coco - Women's Tank Top';Nakedshirt;'Single Jersey Hals- und Armausschnitte mit Rippstrick-Einfassung, Seitennähte, Doppelnaht am Bund, Medium Fit, Neutrales Größenetikett im Nacken. ';'100 % Baumwolle';Damen;T-Shirts;Ärmellos;;Rundhals;Fair;;'155 g/m²';Baumwolle;;105.85.jpg106.85;'Mia - Women's Organic Fi'ted'Longtop';Nakedshirt;'Single Jersey, Decolletée und Armausschnitte mit dezenter Rippstrick-Einfassung, Seitennähte, Doppelnaht am Bund, Extra lang und körpernah geschnitten, Neutrales Größenetikett im Nacken.';'100 % Bio-Baumwolle';Damen;T-Shirts;Ärmellos;;Boat-Neck;'Fair & Umweltfreundlich';;'155 g/m²';;;106.85.jpg107.85;'Louise - Women's Fitted Top';Nakedshirt;'Single Jersey, Hals- und Armausschnitte mit Einfassung, Seitennähte, Doppelnaht am Bund, Körpernah geschnitten,  Neutrales Größenetikett im Nacken. ';'100 % Baumwolle';Damen;T-Shirts;Ärmellos;;Boat-Neck;;;'155 g/m²';Baumwolle;;107.85.jpg110.85;'Mouse - Girl's Fashion T-Shirt';Nakedshirt;'Single Jersey, Rundhalsausschnitt mit Rippstrickkragen,  Ärmelabschluss und Bund sind gekräuselt, Seitennähte,  Neutrales Größenetikett im Nacken. ';'100 % Baumwolle';Kinder;T-Shirts;Kurzarm;;Rundhals;Fair;;'155 g/m² ';Baumwolle;;110.85.jpg 111.85;'Lily - Viscose-Cotton T-Shirt';Nakedshirt;'Single Jersey, Rundhalsausschnitt mit Rippstrick-Bündchen,  Nackenband, Seitennähte, Doppelnaht an Ärmelabschluss und Bund, Medium Fit ';'70% Viskose (aus Bambus-Cellulose), 30% Bio-Baumwolle';Damen;T-Shirts;Kurzarm;;Rundhals;'Fair & Umweltfreundlich';;'150 g/m²';Viskose;;111.85.jpg";
+const inputString =
+  "Hauptartikelnr;Artikelname;Hersteller;Beschreibung;Materialangaben;Geschlecht;Produktart;Ärmel;Bein;Kragen;Herstellung;Taschenart;Grammatur;Material;Ursprungsland;Bildname102.85;'Paul - Men's Supersoft Organic T-Shirt';Nakedshirt;'Single Jersey, Rundhalsausschnitt mit Rippstrickbündchen, Nackenband, Seitennähte, Doppelnaht an Ärmelabschluss und Bund, Medium Fit, Neutrales Größenetikett im Nacken ';'100% Bio-Baumwolle ';Herren;T-Shirts;Kurzarm;;Rundhals;'Fair & Umweltfreundlich';;'200 g/m²';Bio-Baumwolle;;102.85.jpg105.85;'Coco - Women's Tank Top';Nakedshirt;'Single Jersey Hals- und Armausschnitte mit Rippstrick-Einfassung, Seitennähte, Doppelnaht am Bund, Medium Fit, Neutrales Größenetikett im Nacken. ';'100 % Baumwolle';Damen;T-Shirts;Ärmellos;;Rundhals;Fair;;'155 g/m²';Baumwolle;;105.85.jpg106.85;'Mia - Women's Organic Fi'ted'Longtop';Nakedshirt;'Single Jersey, Decolletée und Armausschnitte mit dezenter Rippstrick-Einfassung, Seitennähte, Doppelnaht am Bund, Extra lang und körpernah geschnitten, Neutrales Größenetikett im Nacken.';'100 % Bio-Baumwolle';Damen;T-Shirts;Ärmellos;;Boat-Neck;'Fair & Umweltfreundlich';;'155 g/m²';;;106.85.jpg107.85;'Louise - Women's Fitted Top';Nakedshirt;'Single Jersey, Hals- und Armausschnitte mit Einfassung, Seitennähte, Doppelnaht am Bund, Körpernah geschnitten,  Neutrales Größenetikett im Nacken. ';'100 % Baumwolle';Damen;T-Shirts;Ärmellos;;Boat-Neck;;;'155 g/m²';Baumwolle;;107.85.jpg110.85;'Mouse - Girl's Fashion T-Shirt';Nakedshirt;'Single Jersey, Rundhalsausschnitt mit Rippstrickkragen,  Ärmelabschluss und Bund sind gekräuselt, Seitennähte,  Neutrales Größenetikett im Nacken. ';'100 % Baumwolle';Kinder;T-Shirts;Kurzarm;;Rundhals;Fair;;'155 g/m² ';Baumwolle;;110.85.jpg 111.85;'Lily - Viscose-Cotton T-Shirt';Nakedshirt;'Single Jersey, Rundhalsausschnitt mit Rippstrick-Bündchen,  Nackenband, Seitennähte, Doppelnaht an Ärmelabschluss und Bund, Medium Fit ';'70% Viskose (aus Bambus-Cellulose), 30% Bio-Baumwolle';Damen;T-Shirts;Kurzarm;;Rundhals;'Fair & Umweltfreundlich';;'150 g/m²';Viskose;;111.85.jpg";
 let globalArticleArray = [];
 const initArray = [
   'new',
@@ -41,7 +41,7 @@ class Article {
   }
 }
 
-// let articles = stringToArray(inputString);
+let articles = stringToArray(inputString);
 
 function stringToArray(string) {
   // cut the string to an array of strings => to an array of objects + an Array of items
@@ -67,7 +67,7 @@ function stringToArray(string) {
 }
 
 // initial rendering
-// createLines(globalArticleArray);
+createLines(globalArticleArray);
 
 function createLines(array) {
   for (let i = 0; i < array.length; i++) {
