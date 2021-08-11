@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="glissario" />
+    <meta
+      name="description"
+      content="frontent-junior-challenge1: csv-Verarbeitung"
+    />
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,11 +17,11 @@
       rel="stylesheet"
     />
 
-    <title>Document</title>
+    <title>csv-Verarbeitung</title>
   </head>
   <body>
     <header>
-      <h1>query of csv-Data</h1>
+      <h1>Datenabfrage</h1>
     </header>
     <main>
       <section class="input">
@@ -24,13 +29,13 @@
           <input type="file" id="csvFile" accept=".csv" />
           <input type="submit" value="Submit" />
         </form>
-        <label>geladene Elemente</label>
-        <label id="loaded"></label>
       </section>
       <section class="change-data">
-        <h2 class="change-header">change datas</h2>
+        <h2 class="change-header">Datenänderung</h2>
         <div class="changeInput">
-          <label class="change-input-label">change clicked parameter:</label>
+          <label class="change-input-label"
+            >Änderung des gewählten Parameters</label
+          >
           <input
             type="text"
             ,
@@ -39,7 +44,7 @@
             class="change-input-text"
           />
 
-          <label class="change-input-label">current value:</label>
+          <label class="change-input-label">Aktueller Wert:</label>
           <label class="currentvalue" id="current-value">first</label>
           <p></p>
           <div>
@@ -51,10 +56,10 @@
             </button>
           </div>
         </div>
-        <button class="new-line" id="new-line">new line</button>
+        <button class="new-line" id="new-line">Neuer Eintrag</button>
       </section>
       <section class="output-data" id="output">
-        <h2>output of data:</h2>
+        <h2>Datenausgabe:</h2>
         <div class="head-table" id="head-table">
           <div class="radio"></div>
           <div class="informations" id="main-information">
